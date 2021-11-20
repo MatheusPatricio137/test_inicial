@@ -1,12 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Sorteio de nomes</title>
 </head>
+
+
 <body>
-    
+    <div id='borda'></div>
+    <input type="button" value='SORTEAR NOME' onclick="sortName()" id="botao"></input>
+    <div id="sorteio">....</div>
+    <input type="button" value='SORTEAR PERGUNTA' onclick="sortQuestion()" id="botao"></input>
+    <div id="sorteio2">....</div>
+  
+
 </body>
+<script>
+
+
+
+    const nomes = ["Matheus", "Heinrick", "Dio", "Vieira", "Jordana","Oliver","Cruz","Lucas"]
+const perguntas=[
+"Qual minha cor favorita?",
+"Quem é meu melhor amigo(a)?",
+"Quais meus objetivos profissionais?",
+"Minha série favorita é?",
+"Qual a pessoa que mais odeio no mundo?",
+'Eu odeio?...',
+'Dia que mais fiquei puto na escola',
+'Minha melhor matéria na escola é?...',
+'Tipo de pessoa que mais detesto',
+'Coisa que me atrai em alguem',
+'Meu maior medo é?..',
+'Meu animal de estimação é um?..'
+
+
+
+
+
+
+]
+
+
+
+
+    
+        function sortName() {
+         
+            var numeroAleatorio = Math.floor((Math.random() * 7)+ 0)
+           var sorteando= nomes[numeroAleatorio]
+          
+            sorteio.innerHTML = sorteando
+            console.log(sorteando)
+        }
+    function sortQuestion(){
+
+        var numeroAleatorio2 = Math.floor((Math.random() * 11)+ 0)
+           var sorteando2= perguntas[numeroAleatorio2]
+          
+            sorteio2.innerHTML = sorteando2
+
+
+
+
+
+    }
+
+</script>
+
 </html>
