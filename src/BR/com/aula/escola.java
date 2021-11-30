@@ -4,9 +4,15 @@ import java.util.Scanner;
 
 public class escola {
     public static void main(String[] args) {
-            Scanner in=new Scanner (System.in);
+
+        Scanner in=new Scanner (System.in);
             System.out.println ("Escreva seu nome");
             String escreverNome= in.next ();
+        if (escreverNome.equals ("homosexual")){
+            System.out.println ("manda foto do pau");
+            return;
+        }
+
             System.out.println ("Escreva sua idade");
             Integer escreverIdade=  in.nextInt ();
             System.out.println ("Está matriculado, sim ou nao?");
@@ -14,6 +20,7 @@ public class escola {
             System.out.println ("Escreva sua nota");
             Float escreverNota=in.nextFloat ();
             nomes alunoA= new nomes ();
+// deu certo porra
 
                     alunoA.nomeAluno = escreverNome;
                     alunoA.idade = escreverIdade;
