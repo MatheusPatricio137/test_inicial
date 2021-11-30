@@ -22,7 +22,7 @@ public class escola {
                     alunoA.Status ();
                     alunoA.matricular ();
                     alunoA.reprovar ();
-
+                    alunoA.recuperacao ();
 
 
 

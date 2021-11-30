@@ -13,6 +13,38 @@ public class nomes {
 
     }
 
+    public String getNomeAluno() {
+        return nomeAluno;
+    }
+
+    public void setNomeAluno(String nomeAluno) {
+        this.nomeAluno = nomeAluno;
+    }
+
+    public Integer getIdade() {
+        return idade;
+    }
+
+    public void setIdade(Integer idade) {
+        this.idade = idade;
+    }
+
+    public Float getNota() {
+        return nota;
+    }
+
+    public void setNota(Float nota) {
+        this.nota = nota;
+    }
+
+    public String getMatriculado() {
+        return matriculado;
+    }
+
+    public void setMatriculado(String matriculado) {
+        this.matriculado = matriculado;
+    }
+
     void Status() {
         System.out.println ("Bem-vindo "+this.nomeAluno);
         System.out.println ("Sua idade é de : "+this.idade+" anos");
